@@ -5,7 +5,7 @@ try:
     with open("count.pickle","rb") as f:
         count = pickle.load(f)
 except:
-    pass
+    count = 1
 
 
 
@@ -20,7 +20,14 @@ os.system("git init")
 time.sleep(3)
 os.system("git add .")
 time.sleep(3)
-os.system("git commit -m \"first commit\"")
+if count == 1:
+    os.system("git commit -m \"1st commit\"")
+elif count == 2:
+    os.system("git commit -m \"2nd commit\"")
+elif count == 3:
+    os.system("git commit -m \"3rd commit\"")
+else:
+    os.system("git commit -m \""+str(count)+"th commit\"")
 time.sleep(3)
 os.system("git branch -M main")
 time.sleep(3)
