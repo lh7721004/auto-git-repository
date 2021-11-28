@@ -7,7 +7,7 @@ try:
 except:
     count = 1
 
-
+print("count value is",count)
 
 
 
