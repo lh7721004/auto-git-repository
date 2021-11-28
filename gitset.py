@@ -37,3 +37,4 @@ os.system("git push -u origin main")
 
 with open("count.pickle","wb") as f:
     pickle.dump(count,f)
+    print("pickle file dumped")
