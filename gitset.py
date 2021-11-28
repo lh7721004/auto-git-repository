@@ -36,5 +36,5 @@ time.sleep(3)
 os.system("git push -u origin main")
 
 with open("count.pickle","wb") as f:
-    pickle.dump(count,f)
+    pickle.dump(count+1,f)
     print("pickle file dumped")
